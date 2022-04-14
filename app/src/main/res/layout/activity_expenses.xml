@@ -3,48 +3,39 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity2">
+    android:layout_height="match_parent">
 
     <TextView
         android:id="@+id/record2"
         android:layout_width="156dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="64dp"
-        android:layout_marginBottom="103dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="116dp"
         android:text="Amount"
         android:textSize="34sp"
-        app:layout_constraintBottom_toTopOf="@+id/addamount"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/amount"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="120dp"
+        android:layout_height="35dp"
         android:layout_marginStart="23dp"
-        android:layout_marginTop="226dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginBottom="32dp"
+        android:layout_marginTop="98dp"
         android:text="Amount"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/category"
-        app:layout_constraintEnd_toStartOf="@+id/addamount"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/record2" />
 
     <TextView
         android:id="@+id/category"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="120dp"
+        android:layout_height="35dp"
         android:layout_marginStart="23dp"
-        android:layout_marginEnd="38dp"
-        android:layout_marginBottom="403dp"
+        android:layout_marginTop="32dp"
         android:text="Category"
         android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/addcategory"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/amount" />
 
@@ -52,23 +43,30 @@
         android:id="@+id/addamount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="27dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="103dp"
+        android:layout_marginEnd="26dp"
         android:layout_marginBottom="19dp"
         android:ems="10"
         android:inputType="number"
+        android:minHeight="48dp"
         app:layout_constraintBottom_toTopOf="@+id/addcategory"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/amount"
-        app:layout_constraintTop_toBottomOf="@+id/record2" />
+        app:layout_constraintTop_toBottomOf="@+id/record2"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <EditText
         android:id="@+id/addcategory"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="21dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="20dp"
         android:layout_marginBottom="29dp"
         android:ems="10"
         android:inputType="textPersonName"
+        android:minHeight="48dp"
         android:text="Mention Category"
         app:layout_constraintBottom_toTopOf="@+id/Income"
         app:layout_constraintEnd_toEndOf="parent"
@@ -77,27 +75,23 @@
 
     <Switch
         android:id="@+id/Income"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="66dp"
-        android:layout_marginEnd="66dp"
-        android:layout_marginBottom="31dp"
+        android:layout_width="280dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="29dp"
         android:text="Is Income ?"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/savebt"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/addcategory" />
 
     <Button
         android:id="@+id/savebt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="84dp"
-        android:layout_marginBottom="219dp"
+        android:layout_width="191dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="31dp"
         android:text="save"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/Income"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Income" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
